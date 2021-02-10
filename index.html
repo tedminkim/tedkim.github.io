@@ -1,47 +1,35 @@
 <!DOCTYPE html>
-<style>
-  body {
-    background-color: white;
-  }
-  h1 {
-    color: black;
-  }
-  p {
-    color: black;
-  }
-  #navbar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: #767676;
-  }
-  nav ul {
-    margin: 0px;
-    padding: 5px 0px 5px 30px;
-  }
-  nav li {
-    display: inline;
-    margin-right: 20px;
-  }
-  a {
-    text-decoration: none;
-  }
-</style>
 <html>
   <head>
+    <!--<meta charset="UTF-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Welcome to my Personal Website!</title>
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class ="topnav id=myTopnav">
+      <a href="page-2.html" target="_blank">ABOUT ME</a>
+      <a href="folder/page-3.html" target="_blank">PROJECTS</a>
+      <a href="folder/subfolder/page-4.html" target="_blank">CONTACT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     <h1>TED KIM</h1>
-    <nav id="navbar">
-      <ul>
-        <li><a href="page-2.html" target="_blank">ABOUT ME</a></li>
-        <li><a href="folder/page-3.html" target="_blank">PROJECTS</a></li>
-        <li><a href="folder/subfolder/page-4.html" target="_blank">CONTACT</a></li>
-      </ul>
-    </nav>
-    <p>Hi! My name is Ted Kim! Currently a junior studying Computer Science at the University of California, Riverside</p>
+    <h2>Student, Software Engineer</h2>
+    <img src="Images/WebPhoto.jfif" alt="Ted Kim">
+    <p>Hi! My name is Ted Kim! Currently a fourth studying Computer Science at the University of California, Riverside.</p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
